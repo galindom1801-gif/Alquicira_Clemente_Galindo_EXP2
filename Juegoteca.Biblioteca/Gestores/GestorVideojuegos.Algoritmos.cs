@@ -2,11 +2,11 @@ using Juegoteca.Biblioteca.Modelos;
 
 namespace Juegoteca.Biblioteca.Gestores;
 
-// Parte 2 de la clase (rama feature/algoritmos): algoritmos implementados a mano.
-// No se usa List.Sort(), OrderBy() ni List.BinarySearch().
+// parte 2 de la clase (rama feature/algoritmos): algoritmos implementados a mano.
+
 public partial class GestorVideojuegos
 {
-    // Ordena EN EL LUGAR la lista recibida, ascendente por HorasJuego.
+    // ordena EN EL LUGAR la lista recibida, ascendente por HorasJuego.
     public void QuickSort(List<Videojuego> lista)
     {
         ArgumentNullException.ThrowIfNull(lista);
