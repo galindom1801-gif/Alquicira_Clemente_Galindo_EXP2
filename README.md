@@ -20,18 +20,3 @@ Juegoteca.sln
 ├── README.md
 └── .gitignore
 ```
-
-## Cómo ejecutar
-
-```bash
-dotnet build
-dotnet test
-dotnet run --project Juegoteca.Consola
-```
-
-## Ramas
-
-Una rama por implementación (`feature/solucion`, `feature/interfaces`, `feature/videojuego`,
-`feature/usuario`, `feature/gestor`, `feature/datos-prueba`, `feature/algoritmos`,
-`feature/exportador`, `feature/servicio`, `feature/menu`), todas integradas a `main` con merge.
-La versión final está etiquetada como `v1.0`.
