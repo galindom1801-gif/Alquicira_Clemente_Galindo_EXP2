@@ -22,7 +22,7 @@ Console.WriteLine("Bienvenido al Sistema de Gestión de Videojuegos");
 Console.WriteLine();
 
 // 2. Registro de usuario 
-Console.WriteLine("--- REGISTRO DE USUARIO ---");
+Console.WriteLine("    REGISTRO DE USUARIO    ");
 string nombreUsuario = LeerTextoNoVacio("Ingrese su nombre de usuario: ");
 var usuario = servicio.RegistrarUsuario(nombreUsuario);
 Console.WriteLine($"Usuario '{usuario.Nombre}' registrado. ¡Bienvenido/a, {usuario.Nombre}!");
@@ -48,7 +48,7 @@ bool salir = false;
 while (!salir)
 {
     Console.WriteLine();
-    Console.WriteLine("--- MENÚ PRINCIPAL ---");
+    Console.WriteLine("    MENÚ PRINCIPAL    ");
     Console.WriteLine($"Colección actual: '{coleccionActual}' ({usuario.ObtenerColeccion(coleccionActual).Count} juegos)");
     Console.WriteLine("1. Mostrar juegos disponibles");
     Console.WriteLine("2. Ordenar colección (QuickSort o MergeSort)");
