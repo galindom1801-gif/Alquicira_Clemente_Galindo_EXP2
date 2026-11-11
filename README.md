@@ -7,8 +7,8 @@ Proyecto desarrollado de forma distribuida en GitHub con C# · .NET 8 · xUnit.
 | Nombre completo | Usuario de GitHub |
 |---|---|
 | Osvaldo Alquicira Olalde | @Alquicira |
-| Esveidy Clemente Gonzalez | @esveee-cg |
-| Elias Galindo Venegas[D[D[D[D[a[C[C[C[C[C | @galindom1801-gif |
+| Esveidy Clemente Gonzales | @esveee-cg |
+| Elias Galindo Vanegas | @galindom1801-gif |
 
 ## Estructura
 
