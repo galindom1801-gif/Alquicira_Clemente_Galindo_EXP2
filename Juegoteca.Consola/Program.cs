@@ -5,30 +5,29 @@ using Juegoteca.Biblioteca.Servicios;
 
 Console.OutputEncoding = Encoding.UTF8;
 
-// ---------- 1. Inicialización ----------
 var gestor = new GestorVideojuegos();
 var exportador = new ExportadorTxt();
 var servicio = new ServicioVideojuegos(gestor, exportador);
 
-gestor.AgregarJuego(new Videojuego("Celeste", "Maddy Makes Games", 8));
-gestor.AgregarJuego(new Videojuego("Hollow Knight", "Team Cherry", 40));
+gestor.AgregarJuego(new Videojuego("Overwatch 2", "Blizzard", 10000));
+gestor.AgregarJuego(new Videojuego("Garden Warfare 2", "EA", 40));
 gestor.AgregarJuego(new Videojuego("Minecraft", "Mojang", 100));
-gestor.AgregarJuego(new Videojuego("Tetris", "The Tetris Company", 5));
-gestor.AgregarJuego(new Videojuego("Portal 2", "Valve", 10));
+gestor.AgregarJuego(new Videojuego("Call of Duty : Warzone", "Activision", 5));
+gestor.AgregarJuego(new Videojuego("Red Dead Redemption 2", "Rockstar Games", 10));
 gestor.AgregarJuego(new Videojuego("Stardew Valley", "ConcernedApe", 60));
-gestor.AgregarJuego(new Videojuego("Hades", "Supergiant", 25));
-gestor.AgregarJuego(new Videojuego("Zelda: BOTW", "Nintendo", 120));
+gestor.AgregarJuego(new Videojuego("Fall Guys", "Mediatonic", 25));
+gestor.AgregarJuego(new Videojuego("GTA VI", "Rockstar Games", 120));
 
 Console.WriteLine("Bienvenido al Sistema de Gestión de Videojuegos");
 Console.WriteLine();
 
-// ---------- 2. Registro de usuario ----------
+// 2. Registro de usuario 
 Console.WriteLine("--- REGISTRO DE USUARIO ---");
 string nombreUsuario = LeerTextoNoVacio("Ingrese su nombre de usuario: ");
 var usuario = servicio.RegistrarUsuario(nombreUsuario);
 Console.WriteLine($"Usuario '{usuario.Nombre}' registrado. ¡Bienvenido/a, {usuario.Nombre}!");
 
-// ---------- 3. Creación de la colección inicial ----------
+// Creación de la colección inicial
 string coleccionActual = "";
 while (coleccionActual == "")
 {
@@ -45,7 +44,6 @@ while (coleccionActual == "")
     }
 }
 
-// ---------- 4. Menú principal ----------
 bool salir = false;
 while (!salir)
 {
@@ -227,7 +225,7 @@ while (!salir)
     }
 }
 
-// ---------- Funciones locales ----------
+// Funciones locales 
 static string LeerTextoNoVacio(string mensaje)
 {
     while (true)
