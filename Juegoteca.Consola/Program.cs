@@ -9,14 +9,14 @@ var gestor = new GestorVideojuegos();
 var exportador = new ExportadorTxt();
 var servicio = new ServicioVideojuegos(gestor, exportador);
 
-gestor.AgregarJuego(new Videojuego("Overwatch 2", "Blizzard", 10000));
-gestor.AgregarJuego(new Videojuego("Garden Warfare 2", "EA", 40));
+gestor.AgregarJuego(new Videojuego("Celeste", "Maddy Makes Games", 8));
+gestor.AgregarJuego(new Videojuego("Hollow Knight", "Team Cherry", 40));
 gestor.AgregarJuego(new Videojuego("Minecraft", "Mojang", 100));
-gestor.AgregarJuego(new Videojuego("Call of Duty : Warzone", "Activision", 5));
-gestor.AgregarJuego(new Videojuego("Red Dead Redemption 2", "Rockstar Games", 10));
+gestor.AgregarJuego(new Videojuego("Tetris", "The Tetris Company", 5));
+gestor.AgregarJuego(new Videojuego("Portal 2", "Valve", 10));
 gestor.AgregarJuego(new Videojuego("Stardew Valley", "ConcernedApe", 60));
-gestor.AgregarJuego(new Videojuego("Fall Guys", "Mediatonic", 25));
-gestor.AgregarJuego(new Videojuego("GTA VI", "Rockstar Games", 120));
+gestor.AgregarJuego(new Videojuego("Hades", "Supergiant", 25));
+gestor.AgregarJuego(new Videojuego("Zelda: BOTW", "Nintendo", 120));
 
 Console.WriteLine("Bienvenido al Sistema de Gestión de Videojuegos");
 Console.WriteLine();
