@@ -14,9 +14,9 @@ Proyecto desarrollado de forma distribuida en GitHub con C# · .NET 8 · xUnit.
 
 ```
 Juegoteca.sln
-├── Juegoteca.Consola/        Program.cs (inicialización y menú)
+├── Juegoteca.Consola/        Program.cs
 ├── Juegoteca.Biblioteca/     Modelos, Interfaces, Gestores, Servicios
-├── Juegoteca.Tests/          Pruebas xUnit y carpeta Datos
+├── Juegoteca.Tests/          Pruebas
 ├── README.md
 └── .gitignore
 ```
